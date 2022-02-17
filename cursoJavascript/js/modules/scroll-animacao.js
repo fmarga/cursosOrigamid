@@ -1,9 +1,9 @@
 export default function initAnimacaoScroll() {
   const sections = document.querySelectorAll(".js-scroll");
   //pra animar ao longo da barra de rolagem
+
   if (sections.length) {
     const windowMetade = window.innerHeight * 0.6;
-
     function animaScroll() {
       sections.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top;
